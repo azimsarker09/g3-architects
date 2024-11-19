@@ -1,10 +1,21 @@
 /* work sans font from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap');
 
+/* shared fils  */
 *{
     font-family: "Work Sans", sans-serif;
 }
+.tex-light-gray{
+    color: #727272;
+}
 
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
+}
+
+/* Banner Section  */
 .btn-primary{
     border-radius: 8px;
     color: #fff;
@@ -63,15 +74,76 @@ nav li a{
     color: #131313;
 }
 
-;.banner-description{
-    color: #727272;
-}
 
 .banner img{
     margin-top: 10px;
     width: 100%;
 
 }
+
+/* Main section */
+
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
+
+.teams-container{
+    display: flex;
+    align-items: center;
+
+}
+
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem ;
+    
+}
+
+.teams-content{
+    padding-left: 70px;
+    padding-right: 70px;
+} 
+
+.teams-title{
+    font-size: 2.8rem;
+}
+
+.teams-title .quick-list{
+    font-weight: 500;
+}
+
+.teams-title .Features{
+    color: #ff900e;
+    font-weight: 700;
+}
+
+/* Facts Section  */
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.facts-card-container .card{
+    border-radius: 8px;
+    border: 1px solid #ff900e;
+    text-align: center;
+    padding: 30px 30px;
+}
+
+.facts-card-container .card-stats{
+    font-size: 2.8rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.facts-card-container .card-title{
+    font-weight: 600 ;
+    font-size: 1.25rem;
+    margin: 5px;
+}
+
 
 /* Mobile Device */
 @media screen and (max-width:576px) {
@@ -82,7 +154,18 @@ nav li a{
     nav{
         flex-direction: column;
     }
-    
+
+    .teams-container{
+        flex-direction: column;
+    }
+
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
+    .teams-content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 /* Tablet or Medium Device */
@@ -92,8 +175,11 @@ nav li a{
         padding: 50px;
     }
 
-    nav{
+    nav,
+    .teams-container{
         flex-direction: column;
     }
+
+
 
 }
