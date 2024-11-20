@@ -208,6 +208,24 @@ main{
     width: 165px;
 }
 
+/* Footer Section  */
+
+.footer{
+    background: #fff4e7;
+    border: 1px solid white;
+    border-radius: 8px;
+    text-align: center;
+    
+   
+
+   
+}
+
+.footer-description{
+    margin: 16px 0px;
+    align-items: center;
+}
+
 
 /* Mobile Device */
 @media screen and (max-width:576px) {
